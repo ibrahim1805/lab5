@@ -1,0 +1,94 @@
+:root {
+   --primary-color: brown; 
+   --secondary-color: grey; 
+   --text-color:#333333; 
+}
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color:grey;
+   color: var(--text-color);
+   margin: 0;
+   padding: 0;
+}
+
+
+header {
+   background-color: var(--primary-color);
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+header h1 {
+   margin: 0;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 20px;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+
+section {
+   padding: 30px 5%;
+}
+
+section h2 {
+   color: var(--secondary-color);
+}
+
+
+.genre-card, .artist-card, .instrument-card {
+   background-color: white;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin-bottom: 20px;
+}
+
+.genre-card h3, .artist-card h3, .instrument-card h3 {
+   color: var(--primary-color);
+}
+
+.genre-card a, .artist-card a, .instrument-card a {
+   color: var(--secondary-color);
+   text-decoration: none;
+}
+
+.genre-card a:hover, .artist-card a:hover, .instrument-card a:hover {
+   text-decoration: underline;
+}
+
+
+footer {
+   background-color: var(--primary-color);
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+
+.flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.flex-item {
+   flex: 1 1 300px; 
+   margin: 10px;
+   max-width: 300px;
+}
